@@ -27,8 +27,6 @@ net.addLink('h4','s3')
 # Assignment strategy
 net.mixed()
 
-print(f"Network nodes: {net.nodes()}")
-
 # Nodes general options
 net.enablePcapDumpAll()
 net.enableLogAll()
