@@ -51,7 +51,7 @@ control MyIngress(inout headers hdr,
     }
 
     table forward {
-        key = { standard_metadata.ingress_port: exact};
+        key = { standard_metadata.ingress_port: exact;}
         actions = {
             set_egress_spec;
             NoAction;
