@@ -52,7 +52,7 @@ control MyIngress(inout headers hdr,
         /* Solution 1: Without tables, write the algorithm directly here*/
         /* Solution 2: Apply the table you use */
 
-        standard_metadata.egress_spec = standard_metadata.egress_port;
+        standard_metadata.egress_spec = standard_metadata.ingress_port;
 
     }
 }
